@@ -36,7 +36,7 @@ async function loadCookies(page){
         } 
     }); 
 }
-i=0;
+
 var pngImg1x1;
 fs.readFile("1x1.png", function (err, data) {
     if (err) throw err;
@@ -67,7 +67,6 @@ async function applyEvents(page){
     })
 }
  
-ASIN_LOCK = true;
 (async () => {
     const tmp = os.tmpdir();
     const exec = await download({
