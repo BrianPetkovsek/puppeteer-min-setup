@@ -1,0 +1,31 @@
+{
+  "name": "puppeteer-min-setup",
+  "version": "1.0.0",
+  "description": "ez min setup for puppeteer",
+  "main": "main.js",
+  "scripts": {
+    "run": "npm i && run.bat && exit 0",
+    "runClean": "rmdir /s /q node_modules & del /s /q package-lock.json & npm i && run.bat && exit 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianPetkovsek/puppeteer-min-setup.git"
+  },
+  "author": "Brian Petkovsek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrianPetkovsek/puppeteer-min-setup/issues"
+  },
+  "homepage": "https://github.com/BrianPetkovsek/puppeteer-min-setup#readme",
+  "dependencies": {
+    "download-chromium": "^2.2.1",
+    "moment": "^2.29.1",
+    "pattern-emitter": "^1.0.0",
+    "puppeteer": "^5.5.0",
+    "puppeteer-extra": "^3.1.15",
+    "puppeteer-extra-plugin-stealth": "^2.6.5",
+    "puppeteer-extra-plugin-user-data-dir": "^2.2.7",
+    "puppeteer-extra-plugin-user-preferences": "^2.2.7"
+  }
+}

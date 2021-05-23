@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+creds.pass
+cookies.json
+*.csv
