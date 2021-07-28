@@ -37,11 +37,7 @@ async function loadCookies(page){
     }); 
 }
 
-var pngImg1x1;
-fs.readFile("1x1.png", function (err, data) {
-    if (err) throw err;
-    pngImg1x1 = data;
-});
+const pngImg1x1 = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=', 'base64')
 async function applyEvents(page){
     await loadCookies(page);
 
